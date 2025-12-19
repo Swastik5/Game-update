@@ -1,96 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APK Download Page</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Game Updates – PUBG & BGMI</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  background:#121212;
+  color:#ffffff;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Card */
+.card{
+  background:#1e1e1e;
+  border-radius:16px;
+  border:none;
+}
+
+/* Game Icon */
+.game-icon{
+  width:80px;
+  height:80px;
+  margin:15px auto;
+  display:block;
+}
+
+/* Force WHITE text */
+.apk-name,
+.apk-version,
+.apk-desc{
+  color:#ffffff !important;
+}
+
+/* Footer */
+.footer{
+  color:#aaaaaa;
+  font-size:13px;
+}
+
+/* Language selector */
+.lang-select{
+  background:#1e1e1e;
+  color:#ffffff;
+  border:1px solid #444;
+}
+</style>
 </head>
-<body class="bg-dark text-light">
 
-    <!-- Navigation with multi-language support -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">APK Downloads</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLang" aria-controls="navbarLang" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarLang">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">English</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Español</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">中文</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">日本語</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Game cards -->
-    <div class="container py-5">
-        <div class="row">
-            <!-- PUBG Mobile -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body text-center">
-                        <img src="pubg-mobile.png" class="game-icon mb-3" alt="PUBG Mobile Icon">
-                        <h5 class="card-title">PUBG Mobile</h5>
-                        <p class="card-text">Experience the classic Battle Royale gameplay. Download the latest APK for PUBG Mobile.</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- PUBG Mobile KR -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body text-center">
-                        <img src="pubg-kr.webp" class="game-icon mb-3" alt="PUBG Mobile KR Icon">
-                        <h5 class="card-title">PUBG Mobile KR</h5>
-                        <p class="card-text">Get the Korean version of PUBG Mobile. Latest features and updates included.</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- PUBG Mobile Beta -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body text-center">
-                        <img src="pubg-beta.jpg" class="game-icon mb-3" alt="PUBG Mobile Beta Icon">
-                        <h5 class="card-title">PUBG Mobile Beta</h5>
-                        <p class="card-text">Be the first to try out new features with the PUBG Mobile Beta version. Download the APK now.</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <!-- BGMI -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body text-center">
-                        <img src="bgmi.jpg" class="game-icon mb-3" alt="BGMI Icon">
-                        <h5 class="card-title">BGMI</h5>
-                        <p class="card-text">Download the latest APK of Battlegrounds Mobile India (BGMI) and jump into intense battles.</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Game for Peace -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body text-center">
-                        <img src="game-for-peace.png" class="game-icon mb-3" alt="Game for Peace Icon">
-                        <h5 class="card-title">Game for Peace</h5>
-                        <p class="card-text">The Chinese version of PUBG Mobile. Download the Game for Peace APK here.</p>
-                        <a href="#" class="btn btn-primary">Download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container py-3">
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- HEADER -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="apk-name" data-key="title">Game Updates</h5>
+
+  <select class="form-select lang-select w-auto" onchange="setLanguage(this.value)">
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+    <option value="or">ଓଡ଼ିଆ</option>
+    <option value="bn">বাংলা</option>
+  </select>
+</div>
+
+<!-- PUBG MOBILE -->
+<div class="card p-3 mb-3 text-center">
+  <img src="pubg-mobile.png" class="game-icon" alt="PUBG Mobile Icon">
+  <h5 class="apk-name">PUBG Mobile</h5>
+  <p class="apk-version" data-key="version">Latest Version</p>
+  <p class="apk-desc" data-key="global">Official Global Version</p>
+
+  <a href="https://f.gbcass.com/PUBGMOBILE_Global_4.1.0_uawebsite_livik01_84140693A.apk" class="btn btn-success w-100 mb-2" data-key="fast">⚡ Faster Download</a>
+  <a href="https://f.gbcass.com/PUBGMOBILE_Global_4.1.0_uawebsite_livik01_84140693A.apk" class="btn btn-primary w-100" data-key="download">⬇ Download</a>
+</div>
+
+<!-- PUBG MOBILE KR -->
+<div class="card p-3 mb-3 text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/PUBG_Mobile_logo.svg" class="game-icon">
+  <h5 class="apk-name">PUBG Mobile KR</h5>
+  <p class="apk-version" data-key="version">Latest Version</p>
+  <p class="apk-desc" data-key="kr">Korean Official Version</p>
+
+  <a href="https://play.google.com/store/apps/details?id=com.pubg.krmobile" class="btn btn-success w-100 mb-2" data-key="fast">⚡ Faster Download</a>
+  <a href="https://play.google.com/store/apps/details?id=com.pubg.krmobile" class="btn btn-primary w-100" data-key="download">⬇ Download</a>
+</div>
+
+<!-- PUBG MOBILE BETA -->
+<div class="card p-3 mb-3 text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/PUBG_Mobile_logo.svg" class="game-icon">
+  <h5 class="apk-name">PUBG Mobile Beta</h5>
+  <p class="apk-version" data-key="version">Beta Version</p>
+  <p class="apk-desc" data-key="beta">Test Server Release</p>
+
+  <a href="https://web.gpubgm.com/m/AOS_Beta4.2.0-b.2_No7_4.2.2.20615_Shipping_Google_CE.shell.signed.apk" class="btn btn-success w-100 mb-2" data-key="fast">⚡ Faster Download</a>
+  <a href="https://web.gpubgm.com/m/AOS_Beta4.2.0-b.2_No7_4.2.2.20615_Shipping_Google_CE.shell.signed.apk" class="btn btn-primary w-100" data-key="download">⬇ Download</a>
+</div>
+
+<!-- BGMI -->
+<div class="card p-3 mb-3 text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Battlegrounds_Mobile_India_logo.png" class="game-icon">
+  <h5 class="apk-name">BGMI</h5>
+  <p class="apk-version" data-key="version">Latest Version</p>
+  <p class="apk-desc" data-key="india">India Official Version</p>
+
+  <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" class="btn btn-success w-100 mb-2" data-key="fast">⚡ Faster Download</a>
+  <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" class="btn btn-primary w-100" data-key="download">⬇ Download</a>
+</div>
+
+<!-- GAME FOR PEACE -->
+<div class="card p-3 mb-4 text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Game_for_Peace_logo.png" class="game-icon">
+  <h5 class="apk-name">Game for Peace</h5>
+  <p class="apk-version" data-key="version">Latest Version</p>
+  <p class="apk-desc" data-key="china">China Official Version</p>
+
+  <a href="https://gp.qq.com/" class="btn btn-success w-100 mb-2" data-key="fast">⚡ Faster Download</a>
+  <a href="https://gp.qq.com/" class="btn btn-primary w-100" data-key="download">⬇ Download</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer text-center mt-4" data-key="footer">
+© 2025 SnowMan YT• All rights reserved
+</div>
+
+</div>
+
+<!-- LANGUAGE SCRIPT -->
+<script>
+const t={
+ en:{
+  title:"Game Updates",
+  version:"Latest Version",
+  global:"Official Global Version",
+  kr:"Korean Official Version",
+  beta:"Test Server Release",
+  india:"India Official Version",
+  china:"China Official Version",
+  fast:"⚡ Faster Download",
+  download:"⬇ Download",
+  footer:"© 2025 Game Updates • All rights reserved"
+ },
+ hi:{
+  title:"गेम अपडेट्स",
+  version:"नवीनतम संस्करण",
+  global:"आधिकारिक वैश्विक संस्करण",
+  kr:"कोरियाई आधिकारिक संस्करण",
+  beta:"टेस्ट सर्वर संस्करण",
+  india:"भारत आधिकारिक संस्करण",
+  china:"चीन आधिकारिक संस्करण",
+  fast:"⚡ तेज़ डाउनलोड",
+  download:"⬇ डाउनलोड करें",
+  footer:"© 2025 गेम अपडेट्स • सभी अधिकार सुरक्षित"
+ },
+ or:{
+  title:"ଗେମ୍ ଅପଡେଟ୍",
+  version:"ନୂତନତମ ସଂସ୍କରଣ",
+  global:"ଆଧିକାରିକ ଗ୍ଲୋବାଲ୍ ସଂସ୍କରଣ",
+  kr:"କୋରିଆ ଆଧିକାରିକ ସଂସ୍କରଣ",
+  beta:"ଟେଷ୍ଟ ସର୍ଭର ସଂସ୍କରଣ",
+  india:"ଭାରତ ଆଧିକାରିକ ସଂସ୍କରଣ",
+  china:"ଚୀନ ଆଧିକାରିକ ସଂସ୍କରଣ",
+  fast:"⚡ ଶୀଘ୍ର ଡାଉନଲୋଡ୍",
+  download:"⬇ ଡାଉନଲୋଡ୍",
+  footer:"© 2025 ଗେମ୍ ଅପଡେଟ୍ • ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ"
+ },
+ bn:{
+  title:"গেম আপডেট",
+  version:"সর্বশেষ সংস্করণ",
+  global:"অফিসিয়াল গ্লোবাল সংস্করণ",
+  kr:"কোরিয়া অফিসিয়াল সংস্করণ",
+  beta:"টেস্ট সার্ভার সংস্করণ",
+  india:"ভারত অফিসিয়াল সংস্করণ",
+  china:"চীন অফিসিয়াল সংস্করণ",
+  fast:"⚡ দ্রুত ডাউনলোড",
+  download:"⬇ ডাউনলোড করুন",
+  footer:"© 2025 গেম আপডেট • সর্বস্বত্ব সংরক্ষিত"
+ }
+};
+
+function setLanguage(l){
+ document.querySelectorAll("[data-key]").forEach(e=>{
+  e.innerHTML=t[l][e.getAttribute("data-key")];
+ });
+}
+</script>
+
 </body>
 </html>
+
