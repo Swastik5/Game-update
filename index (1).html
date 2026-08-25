@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnowMan YT | Game Updates</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  background: #121212;
+  color: #ffffff;
+  font-family: system-ui;
+  margin: 0;
+}
+/* HEADER */
+.brand-header {
+  background: linear-gradient(135deg, #00e5ff, #6ff);
+  padding: 18px 12px;
+  text-align: center;
+  border-radius: 0 0 22px 22px;
+}
+.brand-header h1, .brand-header p {
+  color: #000;
+  margin: 0;
+}
+/* CARD STYLE */
+.card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 229, 255, .12);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+/* GAME ICON */
+.game-icon {
+  width: 80px;
+  height: 80px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 16px;
+}
+/* TEXT COLOR */
+.card h5, .card p, .card a { color: #fff !important; }
+/* FOOTER */
+.footer {
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="brand-header">
+  <h1 id="site-title">SnowMan YT</h1>
+  <p id="site-subtitle">Official Game Updates & APK Downloads</p>
+</div>
+
+<div class="container py-3">
+
+<!-- LANGUAGE SELECT -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 id="page-title">Game Updates</h5>
+  <select class="form-select w-auto" onchange="setLanguage(this.value)">
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+    <option value="or">ଓଡ଼ିଆ</option>
+    <option value="bn">বাংলা</option>
+  </select>
+</div>
+
+<div class="row">
+
+<!-- GAME CARDS -->
+<!-- PUBG Mobile -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="pubg-mobile.png" class="game-icon" alt="PUBG Mobile">
+    <h5 class="game-title" data-key="pubg">PUBG Mobile</h5>
+    <p class="game-version" data-key="pubg-version">Version: <b>v4.6.0</b></p>
+    <p class="game-desc" data-key="pubg-desc">Official Global Version</p>
+    <a href="http://k.gjacky.com/1375135419/257/apkupdate/4.5.0.21295/1375135419_257_4.5.0.21295_20260708151703_349859294_apkupdate.apk" class="btn btn-success w-100 mb-2" data-key="pubg-btn1">⚡ Faster Download</a>
+    <a href="https://f.gbcass.com/PUBGMOBILE_Global_4.5.0_uawebsite_livik01D44273B76.apk" class="btn btn-primary w-100" data-key="pubg-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- PUBG Mobile KR -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="pubg-kr.png" class="game-icon" alt="PUBG Mobile KR">
+    <h5 class="game-title" data-key="pubg-kr">PUBG Mobile KR</h5>
+    <p class="game-version" data-key="pubg-kr-version">Version: <b>v4.6.0</b></p>
+    <p class="game-desc" data-key="pubg-kr-desc">Korea Official Version</p>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.krmobile" class="btn btn-success w-100 mb-2" data-key="pubg-kr-btn1">⚡ Faster Download</a>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.krmobile" class="btn btn-primary w-100" data-key="pubg-kr-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- BGMI -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="bgmi.png" class="game-icon" alt="BGMI">
+    <h5 class="game-title" data-key="bgmi">BGMI</h5>
+    <p class="game-version" data-key="bgmi-version">Version: <b>v4.6.0</b></p>
+    <p class="game-desc" data-key="bgmi-desc">India Official Version</p>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" class="btn btn-success w-100 mb-2" data-key="bgmi-btn1">⚡ Faster Download</a>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" class="btn btn-primary w-100" data-key="bgmi-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- Free Fire MAX -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="free-fire-max.png" class="game-icon" alt="Free Fire MAX">
+    <h5 class="game-title" data-key="ffmax">Free Fire MAX</h5>
+    <p class="game-version" data-key="ffmax-version">Version: <b>v2.131.1</b></p>
+    <p class="game-desc" data-key="ffmax-desc">Enhanced Graphics Edition</p>
+    <a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax" class="btn btn-success w-100 mb-2" data-key="ffmax-btn1">⚡ Faster Download</a>
+    <a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax" class="btn btn-primary w-100" data-key="ffmax-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- PUBG Mobile Beta -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="pubg-beta.png" class="game-icon" alt="PUBG Mobile Beta">
+    <h5 class="game-title" data-key="pubg-beta">PUBG Mobile Beta</h5>
+    <p class="game-version" data-key="pubg-beta-version">Version: <b>v4.6.4 Beta</b></p>
+    <p class="game-desc" data-key="pubg-beta-desc">Test Features Version</p>
+    <a href="http://k.gjacky.com/1375135419/230/apkupdate/4.6.4.21455/1375135419_230_4.6.4.21455_20260824160548_128024679_apkupdate.apk" class="btn btn-success w-100 mb-2" data-key="pubg-beta-btn1">⚡ Faster Download</a>
+    <a href="http://k.gjacky.com/1375135419/230/apkupdate/4.6.4.21455/1375135419_230_4.6.4.21455_20260824160548_128024679_apkupdate.apk" class="btn btn-primary w-100" data-key="pubg-beta-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- PUBG New State -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="pubg-newstate.png" class="game-icon" alt="PUBG New State">
+    <h5 class="game-title" data-key="pubg-newstate">PUBG New State</h5>
+    <p class="game-version" data-key="pubg-newstate-version">Version: <b>v0.9.96.794</b></p>
+    <p class="game-desc" data-key="pubg-newstate-desc">Futuristic Battle Royale</p>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.newstate" class="btn btn-success w-100 mb-2" data-key="pubg-newstate-btn1">⚡ Faster Download</a>
+    <a href="https://play.google.com/store/apps/details?id=com.pubg.newstate" class="btn btn-primary w-100" data-key="pubg-newstate-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- Game for Peace -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="game-for-peace.png" class="game-icon" alt="Game for Peace">
+    <h5 class="game-title" data-key="gfp">Game for Peace</h5>
+    <p class="game-version" data-key="gfp-version">Version: <b>v1.37.10</b></p>
+    <p class="game-desc" data-key="gfp-desc">China Official Version</p>
+    <a href="https://gp.qq.com/zlkdatasys/mct/d/play.shtml" class="btn btn-success w-100 mb-2" data-key="gfp-btn1">⚡ Faster Download</a>
+    <a href="https://gp.qq.com/zlkdatasys/mct/d/play.shtml" class="btn btn-primary w-100" data-key="gfp-btn2">⬇ Download</a>
+  </div>
+</div>
+
+<!-- Call of Duty Mobile -->
+<div class="col-md-6 mb-3">
+  <div class="card p-3 text-center">
+    <img src="cod-mobile.png" class="game-icon" alt="Call of Duty Mobile">
+    <h5 class="game-title" data-key="cod">Call of Duty Mobile</h5>
+    <p class="game-version" data-key="cod-version">Version: <b>v1.0.56</b></p>
+    <p class="game-desc" data-key="cod-desc">Global Official Version</p>
+    <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" class="btn btn-success w-100 mb-2" data-key="cod-btn1">⚡ Faster Download</a>
+    <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" class="btn btn-primary w-100" data-key="cod-btn2">⬇ Download</a>
+  </div>
+</div>
+
+</div> <!-- row -->
+
+<div class="footer">© 2026 SnowMan YT • All Rights Reserved</div>
+</div> <!-- container -->
+
+<script>
+const translations = {
+  en: {
+    siteTitle:"SnowMan YT", siteSubtitle:"Official Game Updates & APK Downloads", pageTitle:"Game Updates",
+    pubg:"PUBG Mobile", "pubg-version":"Version: v4.6.0", "pubg-desc":"Official Global Version",
+    "pubg-btn1":"⚡ Faster Download","pubg-btn2":"⬇ Download",
+    "pubg-kr":"PUBG Mobile KR","pubg-kr-version":"Version: v4.6.0","pubg-kr-desc":"Korea Official Version","pubg-kr-btn1":"⚡ Faster Download","pubg-kr-btn2":"⬇ Download",
+    bgmi:"BGMI","bgmi-version":"Version: v4.6.0","bgmi-desc":"India Official Version","bgmi-btn1":"⚡ Faster Download","bgmi-btn2":"⬇ Download",
+    ffmax:"Free Fire MAX","ffmax-version":"Version: v2.131.1","ffmax-desc":"Enhanced Graphics Edition","ffmax-btn1":"⚡ Faster Download","ffmax-btn2":"⬇ Download",
+    "pubg-beta":"PUBG Mobile Beta","pubg-beta-version":"Version: v4.6.4 Beta","pubg-beta-desc":"Test Features Version","pubg-beta-btn1":"⚡ Faster Download","pubg-beta-btn2":"⬇ Download",
+    "pubg-newstate":"PUBG New State","pubg-newstate-version":"Version: v0.9.96.794","pubg-newstate-desc":"Futuristic Battle Royale","pubg-newstate-btn1":"⚡ Faster Download","pubg-newstate-btn2":"⬇ Download",
+    gfp:"Game for Peace","gfp-version":"Version: v1.37.10","gfp-desc":"China Official Version","gfp-btn1":"⚡ Faster Download","gfp-btn2":"⬇ Download",
+    cod:"Call of Duty Mobile","cod-version":"Version: v1.0.56","cod-desc":"Global Official Version","cod-btn1":"⚡ Faster Download","cod-btn2":"⬇ Download"
+  },
+  hi: {
+    siteTitle:"स्नोमैन YT", siteSubtitle:"आधिकारिक गेम अपडेट्स और एपीके डाउनलोड्स", pageTitle:"गेम अपडेट्स",
+    pubg:"PUBG मोबाइल","pubg-version":"संस्करण: v4.6.0","pubg-desc":"आधिकारिक वैश्विक संस्करण","pubg-btn1":"⚡ तेज़ डाउनलोड","pubg-btn2":"⬇ डाउनलोड",
+    "pubg-kr":"PUBG मोबाइल KR","pubg-kr-version":"संस्करण: v4.6.0","pubg-kr-desc":"कोरिया आधिकारिक संस्करण","pubg-kr-btn1":"⚡ तेज़ डाउनलोड","pubg-kr-btn2":"⬇ डाउनलोड",
+    bgmi:"BGMI","bgmi-version":"संस्करण: v4.6.0","bgmi-desc":"भारत आधिकारिक संस्करण","bgmi-btn1":"⚡ तेज़ डाउनलोड","bgmi-btn2":"⬇ डाउनलोड",
+    ffmax:"फ्री फायर MAX","ffmax-version":"संस्करण: v2.131.1","ffmax-desc":"बेहतर ग्राफिक्स संस्करण","ffmax-btn1":"⚡ तेज़ डाउनलोड","ffmax-btn2":"⬇ डाउनलोड",
+    "pubg-beta":"PUBG मोबाइल बीटा","pubg-beta-version":"संस्करण: v4.6.4 बीटा","pubg-beta-desc":"टेस्ट फीचर्स संस्करण","pubg-beta-btn1":"⚡ तेज़ डाउनलोड","pubg-beta-btn2":"⬇ डाउनलोड",
+    "pubg-newstate":"PUBG न्यू स्टेट","pubg-newstate-version":"संस्करण: v0.9.96.794","pubg-newstate-desc":"भविष्यवादी बैटल रॉयल","pubg-newstate-btn1":"⚡ तेज़ डाउनलोड","pubg-newstate-btn2":"⬇ डाउनलोड",
+    gfp:"गेम फॉर पीस","gfp-version":"संस्करण: v1.37.10","gfp-desc":"चीन आधिकारिक संस्करण","gfp-btn1":"⚡ तेज़ डाउनलोड","gfp-btn2":"⬇ डाउनलोड",
+    cod:"कॉल ऑफ़ ड्यूटी मोबाइल","cod-version":"संस्करण: v1.0.56","cod-desc":"वैश्विक आधिकारिक संस्करण","cod-btn1":"⚡ तेज़ डाउनलोड","cod-btn2":"⬇ डाउनलोड"
+  },
+  or: {
+    siteTitle:"ସ୍ନୋମ୍ୟାନ୍ YT", siteSubtitle:"ଅଧିକୃତ ଗେମ୍ ଅପଡେଟ୍ ଏବଂ APK ଡାଉନଲୋଡ୍", pageTitle:"ଗେମ୍ ଅପଡେଟ୍",
+    pubg:"PUBG ମୋବାଇଲ୍","pubg-version":"ଭର୍ସନ୍: v4.6.0","pubg-desc":"ଅଧିକୃତ ଗ୍ଲୋବାଲ୍ ଭର୍ସନ୍","pubg-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","pubg-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    "pubg-kr":"PUBG ମୋବାଇଲ୍ KR","pubg-kr-version":"ଭର୍ସନ୍: v4.6.0","pubg-kr-desc":"କୋରିଆ ଅଧିକୃତ ଭର୍ସନ୍","pubg-kr-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","pubg-kr-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    bgmi:"BGMI","bgmi-version":"ଭର୍ସନ୍: v4.6.0","bgmi-desc":"ଭାରତ ଅଧିକୃତ ଭର୍ସନ୍","bgmi-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","bgmi-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    ffmax:"ଫ୍ରି ଫାୟାର MAX","ffmax-version":"ଭର୍ସନ୍: v2.131.1","ffmax-desc":"ବୃହତ୍ ଗ୍ରାଫିକ୍ସ ସଂସ୍କରଣ","ffmax-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","ffmax-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    "pubg-beta":"PUBG ମୋବାଇଲ୍ ବୀଟା","pubg-beta-version":"ଭର୍ସନ୍: v4.6.4 ବୀଟା","pubg-beta-desc":"ଟେଷ୍ଟ ଫିଚର୍ସ ଭର୍ସନ୍","pubg-beta-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","pubg-beta-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    "pubg-newstate":"PUBG ନ୍ୟୁ ଷ୍ଟେଟ୍","pubg-newstate-version":"ଭର୍ସନ୍: v0.9.96.794","pubg-newstate-desc":"ଭବିଷ୍ୟତ୍ ବ୍ୟାଟଲ୍ ରୋୟାଲ୍","pubg-newstate-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","pubg-newstate-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    gfp:"ଗେମ୍ ଫର୍ ପିସ୍","gfp-version":"ଭର୍ସନ୍: v1.37.10","gfp-desc":"ଚୀନ୍ ଅଧିକୃତ ଭର୍ସନ୍","gfp-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","gfp-btn2":"⬇ ଡାଉନଲୋଡ୍",
+    cod:"କଲ୍ ଅଫ୍ ଡ୍ୟୁଟି ମୋବାଇଲ୍","cod-version":"ଭର୍ସନ୍: v1.0.56","cod-desc":"ଗ୍ଲୋବାଲ୍ ଅଧିକୃତ ଭର୍ସନ୍","cod-btn1":"⚡ ତେଜ ଡାଉନଲୋଡ୍","cod-btn2":"⬇ ଡାଉନଲୋଡ୍"
+  },
+  bn: {
+    siteTitle:"স্নোম্যান YT", siteSubtitle:"অফিসিয়াল গেম আপডেট ও APK ডাউনলোড", pageTitle:"গেম আপডেট",
+    pubg:"PUBG মোবাইল","pubg-version":"ভার্সন: v4.6.0","pubg-desc":"অফিসিয়াল গ্লোবাল ভার্সন","pubg-btn1":"⚡ দ্রুত ডাউনলোড","pubg-btn2":"⬇ ডাউনলোড",
+    "pubg-kr":"PUBG মোবাইল KR","pubg-kr-version":"ভার্সন: v4.6.0","pubg-kr-desc":"কোরিয়া অফিসিয়াল ভার্সন","pubg-kr-btn1":"⚡ দ্রুত ডাউনলোড","pubg-kr-btn2":"⬇ ডাউনলোড",
+    bgmi:"BGMI","bgmi-version":"ভার্সন: v4.6.0","bgmi-desc":"ভারত অফিসিয়াল ভার্সন","bgmi-btn1":"⚡ দ্রুত ডাউনলোড","bgmi-btn2":"⬇ ডাউনলোড",
+    ffmax:"ফ্রি ফায়ার MAX","ffmax-version":"ভার্সন: v2.131.1","ffmax-desc":"উন্নত গ্রাফিক্স সংস্করণ","ffmax-btn1":"⚡ দ্রুত ডাউনলোড","ffmax-btn2":"⬇ ডাউনলোড",
+    "pubg-beta":"PUBG মোবাইল বেটা","pubg-beta-version":"ভার্সন: v4.6.4 বেটা","pubg-beta-desc":"টেস্ট ফিচার সংস্করণ","pubg-beta-btn1":"⚡ দ্রুত ডাউনলোড","pubg-beta-btn2":"⬇ ডাউনলোড",
+    "pubg-newstate":"PUBG নিউ স্টেট","pubg-newstate-version":"ভার্সন: v0.9.96.794","pubg-newstate-desc":"ভবিষ্যত ব্যাটল রয়্যাল","pubg-newstate-btn1":"⚡ দ্রুত ডাউনলোড","pubg-newstate-btn2":"⬇ ডাউনলোড",
+    gfp:"গেম ফর পিস","gfp-version":"ভার্সন: v1.37.10","gfp-desc":"চীন অফিসিয়াল ভার্সন","gfp-btn1":"⚡ দ্রুত ডাউনলোড","gfp-btn2":"⬇ ডাউনলোড",
+    cod:"কল অফ ডিউটি মোবাইল","cod-version":"ভার্সন: v1.0.56","cod-desc":"গ্লোবাল অফিসিয়াল ভার্সন","cod-btn1":"⚡ দ্রুত ডাউনলোড","cod-btn2":"⬇ ডাউনলোড"
+  }
+};
+
+function setLanguage(lang){
+  document.getElementById('site-title').innerText = translations[lang].siteTitle;
+  document.getElementById('site-subtitle').innerText = translations[lang].siteSubtitle;
+  document.getElementById('page-title').innerText = translations[lang].pageTitle;
+
+  document.querySelectorAll('[data-key]').forEach(el=>{
+    const key = el.dataset.key;
+    if(translations[lang][key]) el.innerText = translations[lang][key];
+  });
+}
+</script>
+
+<!-- SOCIAL MEDIA BUTTONS (ADDED WITHOUT CHANGING CONTENT) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+.social-bar{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:35px 0 15px;
+}
+.social-btn{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  color:#fff;
+  text-decoration:none;
+  transition:transform .3s, box-shadow .3s;
+}
+.social-btn:hover{
+  transform:scale(1.15);
+  box-shadow:0 0 15px rgba(255,255,255,.4);
+}
+.youtube{background:#ff0000;}
+.instagram{
+  background:radial-gradient(circle at 30% 107%,
+  #fdf497 0%, #fdf497 5%, #fd5949 45%,
+  #d6249f 60%, #285AEB 90%);
+}
+.discord{background:#5865F2;}
+</style>
+
+<div class="social-bar">
+  <a href="https://youtube.com/@snowman_01" target="_blank" class="social-btn youtube" title="YouTube">
+    <i class="bi bi-youtube"></i>
+  </a>
+
+  <a href="https://instagram.com/snowman_official_01" target="_blank" class="social-btn instagram" title="Instagram">
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <a href="https://discord.com/invite/vGVfNnFbWw" target="_blank" class="social-btn discord" title="Discord">
+    <i class="bi bi-discord"></i>
+  </a>
+
+</div>
+
+
+</body>
+</html>
+
